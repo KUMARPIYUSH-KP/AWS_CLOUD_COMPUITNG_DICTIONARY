@@ -198,7 +198,7 @@
       try {
         // ✅ Call API Gateway
         const response = await fetch(
-          `https://q7kdsumm5a.execute-api.ap-south-1.amazonaws.com/prod/definition?term=${encodeURIComponent(term)}`
+          `https://q7kdsumm5a.execute-api.ap-south-1.amazonaws.com/prod`
         );
 
         if (!response.ok) throw new Error("API request failed");
@@ -265,3 +265,4 @@
   </script>
 </body>
 </html>
+
